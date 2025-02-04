@@ -1,0 +1,295 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Footer prevention */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Header */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Banner Ad */
+  #banner-ad {
+    width: 100%;
+    background-color: #ff6200;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #banner-ad p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Video Container */
+  #video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  #rumble-video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #rumble-video:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Content Section */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Paragraphs with spacing between ads */
+  #content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 15px 0;
+  }
+  
+  /* Ad Spaces */
+  .ad-space {
+    background-color: #ff8e00;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .ad-space:hover {
+    background-color: #ff6200;
+    transform: scale(1.05);
+  }
+  
+  .ad-space p {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  
+  footer p {
+    font-weight: 300;
+  }
+  
+  footer a {
+    color: #ff6200;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ff8e00;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    #banner-ad {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  
+    #rumble-video {
+      max-width: 100%;
+    }
+  
+    #content h2 {
+      font-size: 2rem;
+    }
+  
+    .ad-space {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    #banner-ad {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    #content h2 {
+      font-size: 1.8rem;
+    }
+  
+    #rumble-video {
+      width: 100%;
+    }
+  
+    footer {
+      font-size: 0.75rem;
+    }
+  }
+  /* Download Button Styles */
+  #download-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  #download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #download-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6200;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #ff8e00;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .download-btn:active {
+    background-color: #ff5200;
+    transform: scale(1);
+  }
+  
+  .download-btn:focus {
+    outline: none;
+    border: 2px solid #ff6200;
+  }
+  
+  /* Responsive Styling for Download Section */
+  @media (max-width: 768px) {
+    #download-section h2 {
+      font-size: 2rem;
+    }
+  
+    #download-section p {
+      font-size: 1rem;
+    }
+  
+    .download-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #download-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    #download-section p {
+      font-size: 0.9rem;
+    }
+  
+    .download-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
